@@ -99,6 +99,7 @@ body{
   padding: 15px 0;
 }
 .main-content .box-maincontent .box .information .btn{
+  cursor: pointer;
   display: inline-block;
   padding: 10px 30px;
   border: 1px solid #334;
@@ -141,4 +142,8 @@ body{
     padding: 20px;
     margin: auto;
     box-shadow: -5px -5px 12px 0px #124D54;
+}
+
+.hidden{
+  display: none;
 }
