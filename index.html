@@ -67,16 +67,19 @@
             
             <div class="box">
                 <div class="image">
-                    <img class="image" src="เทพทาโร.jpg" alt="">
+                    <img class="image" src="มะตูมนิ่ม.jpg" alt="">
                 </div>
                 <div class="information">
                     <h2 >มะตูมนิ่ม</h2>
-                    <p><b>ลักษณะ :</b>
+                    <details>
+                    <summary class="btn">Read more</summary>    
+                    <p><b>ลักษณะ :</b>เป็นไม้ยืนต้นสูง 10-15 เมตร ใบเดี่ยว ออกเรียงสลับ รูปรี หรือรูปใบหอกปลายแหลม โคนมน ขอบหยัก ใบมีกลิ่นหอม
                         <br><b>สรรพคุณ :</b>
+                        ช่วยบำรุงกำลัง บำรุงธาตุ ขับลม ทำให้เจริญอาหารทำให้ผิวพรรณเปล่งปลั่งมีน้ำมีนวลไม่เหี่ยวย่น เป็นสมุนไพรอายุวัฒนะ
                
 
                     </p>
-                    <a href="#" class="btn">read more</a>
+                </details>    
                 </div>           
             </div>
 
@@ -422,22 +425,37 @@
 <script>
 
 let loadMoreBtn = document.querySelector('#load-more');
-let currentItem = 1;
+let currentItem = 8;
 
 loadMoreBtn.onclick = () =>{
     let boxes = [...document.querySelectorAll('.main-content .box-maincontent .box')];
-    for(var i = currentItem; i < currentItem + 6; i++){
-        if (i>currentItem) {
-            boxes[i-2].style.display = 'inline-block';
-            break;
-        }
+    console.log(boxes)
+    for(var i = 3; i <= currentItem; i++){
+        console.log(boxes[i]);
+        console.log(i + ', ' + currentItem);
+
         boxes[i].style.display = 'inline-block';
+
+        // if (i>currentItem) {
+
+        //     boxes[i-2].style.display = 'inline-block';
+        //     break;
+        // }
+        // boxes[i].style.display = 'inline-block';
         
     }
-    currentItem += 2;
-    if(currentItem >= boxes.length){
-        loadMoreBtn.style.display = 'none';
+       
+    currentItem += 6;
+    console.log('[End] currentItem : ', currentItem)
+    if(currentItem >= 26  || currentItem <= 21){
+        if(currentItem == 26){
+            currentItem = 21;
+        }
+        else if(currentItem == 27){
+            loadMoreBtn.style.display = 'none';
+        }
     }
+
 }
 
 
