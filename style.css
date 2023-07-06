@@ -1,0 +1,31 @@
+html,body{
+  background-image: url('background-image3.jpg');
+  
+  /*background-color: antiquewhite;*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.top-header{
+    background-color: bisque;
+}
+.main-content{
+    max-width: 700px;
+    margin: 0;
+    padding: 50px;
+    
+}
+.box{
+ 
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: auto;
+    box-shadow: -5px -5px 12px 0px rgba(231, 42, 0, 0.5);
+}
+.font-h{
+    
+
+}
+.font.p{
+
+}
