@@ -101,9 +101,9 @@ body{
 .main-content .box-maincontent .box .information .btn{
   cursor: pointer;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 5px 5px;
   border: 1px solid #334;
-  font-size: 16px;
+  font-size: 13px;
 }
 .main-content .box-maincontent .box .information .btn:hover{
   background-color: crimson;
@@ -124,7 +124,6 @@ body{
   border-color: crimson;
   color: #fff;
 }
-
 
 
 
