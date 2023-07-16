@@ -21,6 +21,7 @@
 body{
   background-image: url('image/background-image3.jpg');
   background-attachment: fixed;
+  /* background-color: rgba(82, 82, 93, 0.357); */
   background-size: 100% 100%;
   /* background-color: rgb(206, 197, 197); */
 }
@@ -41,13 +42,17 @@ body{
   padding: 20%; */
     
 }
-.font{
-  font-style: unset;
-  font-size: 300px;
-}
+
 .header-box{
-  background-color: #334;
-  height: 520px;
+  background-image: url(image/background-6.jpg);
+  margin: 60px;
+  background-color: rgb(196, 223, 190);
+  height: 500px;
+  padding: 10rem;
+  background-size: 100% 100%;
+  /* position: relative; */
+  border-radius: 120px;
+  /* overflow-x: auto; */
   /* text-align: center; */
 }
 
